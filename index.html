@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>合政法律 - 专业法律咨询服务平台</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <div class="logo-container">
+                    <img src="logo.svg" alt="合政法律" class="logo-img">
+                </div>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home">首页</a></li>
+                <li><a href="#services">服务领域</a></li>
+                <li><a href="#lawyers">专业律师</a></li>
+                <li><a href="#process">咨询流程</a></li>
+                <li><a href="#testimonials">客户评价</a></li>
+                <li><a href="#contact">联系我们</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 英雄区域 -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h2>合政法律 — 专业法律服务，解决您的法律难题</h2>
+                <p>汇聚资深律师，提供全方位法律咨询服务，守护您的合法权益。重庆永川本地律所，张律师亲自接待。</p>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary" onclick="window.location.href='tel:18983604846'">立即电话咨询</button>
+                    <button class="btn btn-secondary" onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'})">在线预约</button>
+                </div>
+            </div>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <h3>1000+</h3>
+                    <p>成功案例</p>
+                </div>
+                <div class="stat-item">
+                    <h3>50+</h3>
+                    <p>专业律师</p>
+                </div>
+                <div class="stat-item">
+                    <h3>98%</h3>
+                    <p>客户满意度</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 服务领域 -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-title">
+                <h2>专业服务领域</h2>
+                <p>我们提供全方位的法律服务，覆盖各个法律领域</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">⚖️</div>
+                    <h3>婚姻家庭</h3>
+                    <p>离婚财产分割、抚养权争夺、婚前协议、继承纠纷等婚姻家庭法律问题咨询</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">💼</div>
+                    <h3>公司商事</h3>
+                    <p>公司设立、股权纠纷、合同审查、并购重组、劳动争议等商业法律服务</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🏠</div>
+                    <h3>房产纠纷</h3>
+                    <p>房屋买卖、租赁纠纷、物业纠纷、拆迁补偿、产权过户等房产相关法律咨询</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">💰</div>
+                    <h3>债务追讨</h3>
+                    <p>民间借贷、欠款追讨、债权债务、担保纠纷等债务相关法律问题解决</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🚗</div>
+                    <h3>交通事故</h3>
+                    <p>责任认定、伤残鉴定、赔偿协商、保险理赔、诉讼代理等交通事故法律服务</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">👔</div>
+                    <h3>劳动工伤</h3>
+                    <p>劳动合同、工资社保、工伤赔偿、辞退裁员、劳动仲裁等劳动法律问题</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🔒</div>
+                    <h3>刑事辩护</h3>
+                    <p>取保候审、罪名辩护、量刑辩护、申诉控告等刑事法律辩护服务</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">📝</div>
+                    <h3>合同审查</h3>
+                    <p>各类合同起草、审查、修改，规避法律风险，保障合法权益</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🏢</div>
+                    <h3>知识产权</h3>
+                    <p>专利、商标、著作权保护，侵权诉讼，商业秘密保护等知识产权服务</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 专业律师 -->
+    <section id="lawyers" class="lawyers">
+        <div class="container">
+            <div class="section-title">
+                <h2>我们的专业律师</h2>
+                <p>经验丰富的律师团队，为您提供专业法律服务</p>
+            </div>
+            <div class="lawyers-grid">
+                <div class="lawyer-card featured">
+                    <div class="lawyer-avatar">张</div>
+                    <h3>张律师</h3>
+                    <p class="lawyer-title">负责人 · 首席律师</p>
+                    <p class="lawyer-experience">18年执业经验</p>
+                    <p>合政法律负责人，擅长处理各类复杂法律案件，经验丰富，专业负责</p>
+                </div>
+                <div class="lawyer-card">
+                    <div class="lawyer-avatar">李</div>
+                    <h3>李律师</h3>
+                    <p class="lawyer-title">公司商事律师</p>
+                    <p class="lawyer-experience">12年执业经验</p>
+                    <p>专注公司法律事务，为多家企业提供常年法律顾问服务</p>
+                </div>
+                <div class="lawyer-card">
+                    <div class="lawyer-avatar">王</div>
+                    <h3>王律师</h3>
+                    <p class="lawyer-title">刑事辩护律师</p>
+                    <p class="lawyer-experience">18年执业经验</p>
+                    <p>资深刑事辩护律师，多起重大案件获得无罪判决</p>
+                </div>
+                <div class="lawyer-card">
+                    <div class="lawyer-avatar">刘</div>
+                    <h3>刘律师</h3>
+                    <p class="lawyer-title">房地产法律专家</p>
+                    <p class="lawyer-experience">10年执业经验</p>
+                    <p>专注房地产领域法律服务，处理大量房产纠纷案件</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 咨询流程 -->
+    <section id="process" class="process">
+        <div class="container">
+            <div class="section-title">
+                <h2>咨询流程</h2>
+                <p>简单四步，解决您的法律问题</p>
+            </div>
+            <div class="process-steps">
+                <div class="step-item">
+                    <div class="step-number">1</div>
+                    <h3>在线预约</h3>
+                    <p>填写您的法律问题信息，选择合适的咨询时间</p>
+                </div>
+                <div class="step-item">
+                    <div class="step-number">2</div>
+                    <h3>匹配律师</h3>
+                    <p>根据您的问题类型，匹配专业领域的律师</p>
+                </div>
+                <div class="step-item">
+                    <div class="step-number">3</div>
+                    <h3>咨询沟通</h3>
+                    <p>通过在线或电话方式与律师进行沟通咨询</p>
+                </div>
+                <div class="step-item">
+                    <div class="step-number">4</div>
+                    <h3>解决问题</h3>
+                    <p>获得专业法律意见，解决您的法律问题</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 客户评价 -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <div class="section-title">
+                <h2>客户评价</h2>
+                <p>看看我们的客户怎么说</p>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">张律师专业能力很强，我的离婚财产分割案件处理得非常好，结果很满意。律师很耐心，解答了我所有的疑问。</p>
+                    <div class="testimonial-author">
+                        <strong>陈女士</strong>
+                        <span>婚姻家庭案件</span>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">公司股权纠纷困扰我们很久，李律师给出了专业的解决方案，最终顺利解决了问题，非常感谢！</p>
+                    <div class="testimonial-author">
+                        <strong>王先生</strong>
+                        <span>公司商事案件</span>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">交通事故后对方不赔偿，王律师帮助我通过法律途径获得了应有的赔偿，服务专业，态度很好。</p>
+                    <div class="testimonial-author">
+                        <strong>李先生</strong>
+                        <span>交通事故案件</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 常见问题 -->
+    <section class="faq">
+        <div class="container">
+            <div class="section-title">
+                <h2>常见问题</h2>
+                <p>解答您最关心的法律问题</p>
+            </div>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h4>咨询需要收费吗？</h4>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>我们提供首次免费咨询服务，您可以先简要描述您的问题，我们会给您初步的法律意见。如果需要进一步的法律服务，我们会根据案件复杂程度明确告知收费标准。</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h4>多长时间能得到回复？</h4>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>一般情况下，我们会在24小时内安排专业律师与您联系。紧急案件我们会优先处理，争取在最短时间内给您回复。</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h4>如何保护我的隐私？</h4>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>我们严格遵守律师职业道德，对客户信息和案件内容绝对保密。您的个人信息和案件细节只会用于案件处理，不会向任何第三方泄露。</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h4>可以上门咨询吗？</h4>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>当然可以。我们设有专业的咨询办公室，您可以提前预约时间上门面对面咨询。对于不便出行的客户，我们也提供上门服务。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 联系我们 -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-title">
+                <h2>立即咨询</h2>
+                <p>填写以下信息，我们会尽快与您联系</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="info-item">
+                        <span class="info-icon">📍</span>
+                        <div>
+                            <h4>办公地址</h4>
+                            <p>重庆市永川区胜利南路94号</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-icon">📞</span>
+                        <div>
+                            <h4>联系电话</h4>
+                            <p>18983604846（张律师）</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-icon">👤</span>
+                        <div>
+                            <h4>联系人</h4>
+                            <p>张律师</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-icon">⏰</span>
+                        <div>
+                            <h4>工作时间</h4>
+                            <p>周一至周五 9:00-18:00</p>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <label for="name">姓名</label>
+                        <input type="text" id="name" name="name" required placeholder="请输入您的姓名">
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">联系电话</label>
+                        <input type="tel" id="phone" name="phone" required placeholder="请输入您的电话号码">
+                    </div>
+                    <div class="form-group">
+                        <label for="type">案件类型</label>
+                        <select id="type" name="type">
+                            <option value="">请选择案件类型</option>
+                            <option value="marriage">婚姻家庭</option>
+                            <option value="company">公司商事</option>
+                            <option value="realestate">房产纠纷</option>
+                            <option value="debt">债务追讨</option>
+                            <option value="traffic">交通事故</option>
+                            <option value="labor">劳动工伤</option>
+                            <option value="criminal">刑事辩护</option>
+                            <option value="contract">合同审查</option>
+                            <option value="ip">知识产权</option>
+                            <option value="other">其他</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="description">问题描述</label>
+                        <textarea id="description" name="description" rows="4" placeholder="请简要描述您的法律问题"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">提交咨询</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>合政法律</h3>
+                    <p>专业法律咨询服务平台，汇聚资深律师，为您提供全方位法律服务</p>
+                    <p style="margin-top: 1rem; font-size: 0.9rem;">地址：重庆市永川区胜利南路94号<br>电话：18983604846 张律师</p>
+                </div>
+                <div class="footer-section">
+                    <h4>服务领域</h4>
+                    <ul>
+                        <li>婚姻家庭</li>
+                        <li>公司商事</li>
+                        <li>房产纠纷</li>
+                        <li>债务追讨</li>
+                        <li>交通事故</li>
+                    </ul>
+                </div>

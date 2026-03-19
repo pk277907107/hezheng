@@ -1,0 +1,10 @@
+{
+  "name": "hezheng-law",
+  "version": "1.0.0",
+  "description": "合政法律 - 专业法律咨询服务网站",
+  "main": "index.html",
+  "scripts": {},
+  "keywords": ["legal", "law", "consulting", "hezheng"],
+  "author": "",
+  "license": "MIT"
+}
