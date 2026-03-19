@@ -1,24 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="600" height="300" viewBox="0 0 600 300" xmlns="http://www.w3.org/2000/svg">
-  <!-- 背景 -->
-  <rect width="600" height="300" fill="#ffffff"/>
+<svg width="500" height="600" viewBox="0 0 500 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- 定义渐变：左侧红到右侧蓝 圆形渐变 -->
+  <defs>
+    <radialGradient id="bgGradient" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%" stop-color="#E53E3E"/>
+      <stop offset="50%" stop-color="#9C27B0"/>
+      <stop offset="100%" stop-color="#3182CE"/>
+    </radialGradient>
+  </defs>
   
-  <!-- 图形标志：结合"合"和天平的抽象设计 -->
-  <g transform="translate(100, 75)">
-    <!-- 主体轮廓 - 对称设计体现法律公正 -->
-    <path d="M 0 150 L 50 0 L 80 0 L 105 80 L 130 0 L 160 0 L 210 150 L 180 150 L 155 70 L 130 150 L 80 150 L 55 70 L 25 150 Z" 
-          fill="#1a1a1a" stroke="none"/>
-    <!-- 内部横线代表"合" -->
-    <rect x="35" y="75" width="110" height="12" fill="#ffffff" rx="6"/>
+  <!-- 背景圆形 -->
+  <circle cx="250" cy="200" r="180" fill="url(#bgGradient)"/>
+  
+  <!-- HZ 白色字母 (合政首字母) -->
+  <g transform="translate(130, 110)" fill="#ffffff">
+    <!-- H -->
+    <rect x="0" y="0" width="35" height="180" rx="8"/>
+    <rect x="85" y="0" width="35" height="180" rx="8"/>
+    <rect x="0" y="72" width="120" height="36" rx="8"/>
+    
+    <!-- Z -->
+    <rect x="140" y="0" width="120" height="35" rx="8"/>
+    <polygon points="140 180 260 180 195 95" />
+    <rect x="140" y="145" width="120" height="35" rx="8"/>
   </g>
   
-  <!-- 文字部分 -->
-  <g transform="translate(330, 110)">
-    <!-- "合政" -->
+  <!-- 下方中文：合政法律 -->
+  <g transform="translate(250, 450)" text-anchor="middle">
     <text x="0" y="0" font-family="PingFang SC, Microsoft YaHei, sans-serif" 
-          font-size="48" font-weight="bold" fill="#1a1a1a">合政</text>
-    <!-- "法律" -->
-    <text x="0" y="50" font-family="PingFang SC, Microsoft YaHei, sans-serif" 
-          font-size="32" fill="#4a4a4a">法律</text>
+          font-size="60" font-weight="bold" fill="#1a1a1a">合政法律</text>
   </g>
 </svg>

@@ -128,6 +128,19 @@ cards.forEach(card => {
     observer.observe(card);
 });
 
+// 微信二维码弹窗切换
+function toggleWechatModal() {
+    const modal = document.getElementById('wechatModal');
+    modal.classList.toggle('active');
+}
+
+// 点击模态框外部关闭
+document.addEventListener('click', (e) => {
+    if (e.target.classList.contains('wechat-modal')) {
+        toggleWechatModal();
+    }
+});
+
 // 统计数字动画
 const statItems = document.querySelectorAll('.stat-item h3');
 let statsAnimated = false;

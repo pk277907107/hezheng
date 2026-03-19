@@ -34,7 +34,7 @@ body {
 }
 
 .logo-img {
-    height: 50px;
+    height: 65px;
     width: auto;
 }
 
@@ -544,6 +544,112 @@ section {
     color: #a0aec0;
 }
 
+/* 悬浮微信咨询按钮 */
+.wechat-float {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    background: #07c160;
+    color: white;
+    padding: 12px 16px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(7, 193, 96, 0.3);
+    z-index: 999;
+    transition: all 0.3s;
+    animation: pulse 2s infinite;
+}
+
+.wechat-float:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 16px rgba(7, 193, 96, 0.4);
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 4px 12px rgba(7, 193, 96, 0.3);
+    }
+    50% {
+        box-shadow: 0 4px 20px rgba(7, 193, 96, 0.5);
+    }
+    100% {
+        box-shadow: 0 4px 12px rgba(7, 193, 96, 0.3);
+    }
+}
+
+.wechat-float .wechat-icon {
+    font-size: 24px;
+}
+
+.wechat-float span {
+    font-weight: 500;
+    white-space: nowrap;
+}
+
+/* 微信二维码弹窗 */
+.wechat-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 1000;
+    align-items: center;
+    justify-content: center;
+}
+
+.wechat-modal.active {
+    display: flex;
+}
+
+.wechat-modal-content {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    text-align: center;
+    position: relative;
+    max-width: 320px;
+}
+
+.wechat-modal-close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 28px;
+    cursor: pointer;
+    color: #999;
+    line-height: 1;
+}
+
+.wechat-modal-close:hover {
+    color: #333;
+}
+
+.wechat-modal-content h3 {
+    color: #1a365d;
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+}
+
+.wechat-qrcode {
+    max-width: 250px;
+    max-height: 250px;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.wechat-modal-content p {
+    color: #666;
+    margin: 0;
+}
+
 /* 响应式设计 */
 @media (max-width: 768px) {
     .nav-menu {
@@ -581,6 +687,16 @@ section {
     }
     
     .step-item:not(:last-child):after {
+        display: none;
+    }
+    
+    .wechat-float {
+        right: 10px;
+        bottom: 10px;
+        padding: 10px 12px;
+    }
+    
+    .wechat-float span {
         display: none;
     }
 }
